@@ -6,6 +6,15 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+Vue.config.ignoredElements = [
+  'ion-app',
+  'ion-header',
+  'ion-navbar',
+  'ion-title',
+  'ion-content',
+  'ion-button'
+];
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

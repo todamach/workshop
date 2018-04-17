@@ -8,9 +8,9 @@
 
     </ion-header>
 
-    <ion-content>
+    <ion-content padding>
 
-      <ion-button @click="goToDetail">Hello</ion-button>
+      <p><router-link to="/">Go home</router-link></p>
 
     </ion-content>
   </ion-app>
@@ -18,15 +18,10 @@
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'Detail',
     data () {
       return {
         msg: 'Welcome to Your Vue.js App'
-      }
-    },
-    methods: {
-      goToDetail () {
-        this.$router.push('detail')
       }
     }
   }
